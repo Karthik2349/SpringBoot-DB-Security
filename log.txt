@@ -1,0 +1,628 @@
+2022-10-13 11:09:00.390  INFO 17312 --- [restartedMain] c.k.c.CrudThymeleafSpringbootApplication : Starting CrudThymeleafSpringbootApplication using Java 17.0.4.1 on karthik with PID 17312 (C:\Users\karna\Downloads\crud_thymeleaf_springboot-main\crud_thymeleaf_springboot-main\target\classes started by karna in C:\Users\karna\Downloads\crud_thymeleaf_springboot-main)
+2022-10-13 11:09:00.394  INFO 17312 --- [restartedMain] c.k.c.CrudThymeleafSpringbootApplication : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 11:09:00.656  INFO 17312 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 11:09:00.657  INFO 17312 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 11:09:01.766  INFO 17312 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 11:09:01.769  INFO 17312 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-10-13 11:09:01.819  INFO 17312 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.karthik.crud_thymeleaf_springboot.repository.StudentRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-10-13 11:09:01.823  INFO 17312 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.karthik.crud_thymeleaf_springboot.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-10-13 11:09:01.825  INFO 17312 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 0 JDBC repository interfaces.
+2022-10-13 11:09:01.842  INFO 17312 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 11:09:01.845  INFO 17312 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-13 11:09:01.895  INFO 17312 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+2022-10-13 11:09:02.943  INFO 17312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-13 11:09:02.964  INFO 17312 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 11:09:02.965  INFO 17312 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 11:09:03.222  INFO 17312 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 11:09:03.223  INFO 17312 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2563 ms
+2022-10-13 11:09:03.524  INFO 17312 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-13 11:09:03.582  INFO 17312 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-10-13 11:09:03.741  INFO 17312 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-13 11:09:03.781 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@2c32feb
+2022-10-13 11:09:03.782 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@2c32feb
+2022-10-13 11:09:03.783 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@2c32feb
+2022-10-13 11:09:03.784 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6b662505
+2022-10-13 11:09:03.786 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@11649431
+2022-10-13 11:09:03.788 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@5e04d8bc
+2022-10-13 11:09:03.791 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@52709437
+2022-10-13 11:09:03.792 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@52709437
+2022-10-13 11:09:03.793 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@52709437
+2022-10-13 11:09:03.795 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@2b18a93c
+2022-10-13 11:09:03.797 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@2b18a93c
+2022-10-13 11:09:03.798 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@2b18a93c
+2022-10-13 11:09:03.801 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@7b9fec72
+2022-10-13 11:09:03.801 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@7b9fec72
+2022-10-13 11:09:03.802 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@7b9fec72
+2022-10-13 11:09:03.804 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@25c7896c
+2022-10-13 11:09:03.804 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@25c7896c
+2022-10-13 11:09:03.806 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@25c7896c
+2022-10-13 11:09:03.813 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@4849a79a
+2022-10-13 11:09:03.815 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@4849a79a
+2022-10-13 11:09:03.816 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@4849a79a
+2022-10-13 11:09:03.817 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@6f6f5545
+2022-10-13 11:09:03.818 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@6f6f5545
+2022-10-13 11:09:03.819 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@6f6f5545
+2022-10-13 11:09:03.820 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@1abd40b6
+2022-10-13 11:09:03.821 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@1abd40b6
+2022-10-13 11:09:03.822 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1abd40b6
+2022-10-13 11:09:03.824 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@308e6c1f
+2022-10-13 11:09:03.825 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@308e6c1f
+2022-10-13 11:09:03.829 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@664b326e
+2022-10-13 11:09:03.830 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@664b326e
+2022-10-13 11:09:03.831 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@3861df3b
+2022-10-13 11:09:03.832 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@3861df3b
+2022-10-13 11:09:03.833 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@55bf4216
+2022-10-13 11:09:03.837 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@53abb7c5
+2022-10-13 11:09:03.841 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@35414069
+2022-10-13 11:09:03.842 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@35414069
+2022-10-13 11:09:03.845 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@3b1cd529
+2022-10-13 11:09:03.846 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@3b1cd529
+2022-10-13 11:09:03.850 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@46028d80
+2022-10-13 11:09:03.851 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@46028d80
+2022-10-13 11:09:03.857 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@40768c8b
+2022-10-13 11:09:03.857 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@40768c8b
+2022-10-13 11:09:03.860 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@6a1ed61f
+2022-10-13 11:09:03.863 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@6a1ed61f
+2022-10-13 11:09:03.865 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@2321f347
+2022-10-13 11:09:03.866 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@2321f347
+2022-10-13 11:09:03.870 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@424feda9
+2022-10-13 11:09:03.871 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@424feda9
+2022-10-13 11:09:03.873 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@335e85b
+2022-10-13 11:09:03.875 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@335e85b
+2022-10-13 11:09:03.879 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@534dccf5
+2022-10-13 11:09:03.880 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@534dccf5
+2022-10-13 11:09:03.884 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@1cdf6378
+2022-10-13 11:09:03.887 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@1cdf6378
+2022-10-13 11:09:03.890 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@54d0137
+2022-10-13 11:09:03.891 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@54d0137
+2022-10-13 11:09:03.894 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@2541b362
+2022-10-13 11:09:03.895 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@2541b362
+2022-10-13 11:09:03.896 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@2541b362
+2022-10-13 11:09:03.901 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@249c7ded
+2022-10-13 11:09:03.905 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@6e0670b8
+2022-10-13 11:09:03.905 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@6e0670b8
+2022-10-13 11:09:03.906 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@6e0670b8
+2022-10-13 11:09:03.909 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@57a839a4
+2022-10-13 11:09:03.911 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@7b3bfadf
+2022-10-13 11:09:03.913 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@1895cb1c
+2022-10-13 11:09:03.914 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@1895cb1c
+2022-10-13 11:09:03.916 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@605ea3cd
+2022-10-13 11:09:03.919 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@605ea3cd
+2022-10-13 11:09:03.921 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@6fb8656
+2022-10-13 11:09:03.922 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6fb8656
+2022-10-13 11:09:03.923 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@148b2d69
+2022-10-13 11:09:03.924 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@148b2d69
+2022-10-13 11:09:03.926 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@4a1b3422
+2022-10-13 11:09:03.927 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@4a1b3422
+2022-10-13 11:09:03.929 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5660dd0d
+2022-10-13 11:09:03.932 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@4388c4a
+2022-10-13 11:09:03.933 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@4388c4a
+2022-10-13 11:09:03.934 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@4388c4a
+2022-10-13 11:09:03.935 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@6082f7af
+2022-10-13 11:09:03.937 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@6082f7af
+2022-10-13 11:09:03.937 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@6082f7af
+2022-10-13 11:09:03.941 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@6516785f
+2022-10-13 11:09:03.944 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@37046988
+2022-10-13 11:09:03.947 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@3d6ea042
+2022-10-13 11:09:03.949 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@3d6ea042
+2022-10-13 11:09:03.949 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@3d6ea042
+2022-10-13 11:09:03.950 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@24166c1b
+2022-10-13 11:09:03.951 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@24166c1b
+2022-10-13 11:09:03.952 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@24166c1b
+2022-10-13 11:09:03.953 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@4cd8a3b8
+2022-10-13 11:09:03.954 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@aaaf925
+2022-10-13 11:09:03.958 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@4b4ba760
+2022-10-13 11:09:03.960 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4b4ba760
+2022-10-13 11:09:03.962 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@5ab51c6e
+2022-10-13 11:09:03.967 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@58d91fe5
+2022-10-13 11:09:03.967 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@58d91fe5
+2022-10-13 11:09:03.970 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@14c0b5e3
+2022-10-13 11:09:03.972 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@14c0b5e3
+2022-10-13 11:09:03.974 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1376f9fb
+2022-10-13 11:09:03.975 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@645c35a6
+2022-10-13 11:09:03.980 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@7dab1616
+2022-10-13 11:09:03.987 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@7e0d7daa
+2022-10-13 11:09:03.988 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7e0d7daa
+2022-10-13 11:09:03.990 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@27ef5b9d
+2022-10-13 11:09:03.992 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@12bd4832
+2022-10-13 11:09:03.993 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@55d2a082
+2022-10-13 11:09:03.996 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@33ac6a39
+2022-10-13 11:09:03.997 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@6ec2fc62
+2022-10-13 11:09:03.998 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@1646c550
+2022-10-13 11:09:03.999 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@5650b1aa
+2022-10-13 11:09:04.000 DEBUG 17312 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@67de4fb
+2022-10-13 11:09:04.059  INFO 17312 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 11:09:04.258  INFO 17312 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 11:09:04.292  INFO 17312 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-10-13 11:09:04.345 DEBUG 17312 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@203bb0e1] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@4ca4dd74]
+2022-10-13 11:09:04.720 DEBUG 17312 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@203bb0e1] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@30c0097a]
+2022-10-13 11:09:05.165  INFO 17312 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-13 11:09:05.173 TRACE 17312 --- [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@30c0097a] for TypeConfiguration
+2022-10-13 11:09:05.174  INFO 17312 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 11:09:05.629  WARN 17312 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-13 11:09:05.925  INFO 17312 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@755ad8a2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23ba232f, org.springframework.security.web.context.SecurityContextPersistenceFilter@7dc29df9, org.springframework.security.web.header.HeaderWriterFilter@3ca3e32, org.springframework.security.web.authentication.logout.LogoutFilter@73266b9f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@e99e2cc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@19d791f4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1876e9ca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@637e003, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f8c05e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a6b4619, org.springframework.security.web.session.SessionManagementFilter@245f323, org.springframework.security.web.access.ExceptionTranslationFilter@30d00059, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b744df9]
+2022-10-13 11:09:06.112  INFO 17312 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-10-13 11:09:06.760  INFO 17312 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 11:09:06.769  INFO 17312 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-13 11:09:06.837  INFO 17312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-13 11:09:06.855  INFO 17312 --- [restartedMain] c.k.c.CrudThymeleafSpringbootApplication : Started CrudThymeleafSpringbootApplication in 6.806 seconds (JVM running for 7.475)
+2022-10-13 11:09:09.348  INFO 17312 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 11:09:09.349  INFO 17312 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 11:09:09.350  INFO 17312 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 11:13:38.878 DEBUG 17312 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select user0_.user_id as user_id1_2_, user0_.enabled as enabled2_2_, user0_.password as password3_2_, user0_.username as username4_2_ from users user0_ where user0_.username=?
+2022-10-13 11:13:38.883 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [administrator]
+2022-10-13 11:13:38.891 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_2_] : [BIGINT]) - [1]
+2022-10-13 11:13:38.899 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([enabled2_2_] : [BOOLEAN]) - [true]
+2022-10-13 11:13:38.902 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password3_2_] : [VARCHAR]) - [$2a$10$zCawx5eX1yRcdpKzKLFnFOdjx2IwX5HjhDVNSqZG79KIrxp3uMJBW]
+2022-10-13 11:13:38.905 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([username4_2_] : [VARCHAR]) - [administrator]
+2022-10-13 11:13:38.924 TRACE 17312 --- [http-nio-8080-exec-3] org.hibernate.type.CollectionType        : Created collection wrapper: [com.karthik.crud_thymeleaf_springboot.model.User.roles#1]
+2022-10-13 11:13:38.931 DEBUG 17312 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.role_id as role_id1_0_1_, role1_.name as name2_0_1_ from users_roles roles0_ inner join roles role1_ on roles0_.role_id=role1_.role_id where roles0_.user_id=?
+2022-10-13 11:13:38.932 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2022-10-13 11:13:38.944 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([role_id1_0_1_] : [INTEGER]) - [3]
+2022-10-13 11:13:38.945 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_1_] : [VARCHAR]) - [ADMIN]
+2022-10-13 11:13:38.946 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_3_0_] : [BIGINT]) - [1]
+2022-10-13 11:13:38.946 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([role_id2_3_0_] : [INTEGER]) - [3]
+2022-10-13 11:13:39.091 DEBUG 17312 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?
+2022-10-13 11:13:39.094 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [4]
+2022-10-13 11:13:39.096 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [joeroot@hotmail.com]
+2022-10-13 11:13:39.096 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [joe]
+2022-10-13 11:13:39.096 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [root]
+2022-10-13 11:13:39.097 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [2]
+2022-10-13 11:13:39.097 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [kalyani@gmail.com]
+2022-10-13 11:13:39.098 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [kalyani]
+2022-10-13 11:13:39.098 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:13:39.099 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [10]
+2022-10-13 11:13:39.099 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthi@gmail.com]
+2022-10-13 11:13:39.099 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthi]
+2022-10-13 11:13:39.100 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:13:39.100 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [1]
+2022-10-13 11:13:39.101 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthik@gmail.com]
+2022-10-13 11:13:39.101 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthik]
+2022-10-13 11:13:39.101 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:13:39.102 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [8]
+2022-10-13 11:13:39.102 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [padma@gmail.com]
+2022-10-13 11:13:39.102 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [padma]
+2022-10-13 11:13:39.103 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:13:39.114 DEBUG 17312 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select count(student0_.id) as col_0_0_ from student student0_
+2022-10-13 11:13:39.122 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [11]
+2022-10-13 11:13:50.507 DEBUG 17312 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?, ?
+2022-10-13 11:13:50.509 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [3]
+2022-10-13 11:13:50.511 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [paul@yahoo.com]
+2022-10-13 11:13:50.512 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [paul]
+2022-10-13 11:13:50.512 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [jackson]
+2022-10-13 11:13:50.513 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [5]
+2022-10-13 11:13:50.513 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [rohit@gmail.com]
+2022-10-13 11:13:50.513 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [rohit]
+2022-10-13 11:13:50.514 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [sharma]
+2022-10-13 11:13:50.514 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [6]
+2022-10-13 11:13:50.515 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [shirisha@gmail.com]
+2022-10-13 11:13:50.515 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [shirisha]
+2022-10-13 11:13:50.516 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [kurva]
+2022-10-13 11:13:50.517 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [9]
+2022-10-13 11:13:50.519 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [siri@gmail.com]
+2022-10-13 11:13:50.520 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [siri]
+2022-10-13 11:13:50.520 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [kurva]
+2022-10-13 11:13:50.521 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [7]
+2022-10-13 11:13:50.521 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [srinivas@gmail.com]
+2022-10-13 11:13:50.522 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [srinivas]
+2022-10-13 11:13:50.522 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:13:50.524 DEBUG 17312 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select count(student0_.id) as col_0_0_ from student student0_
+2022-10-13 11:13:50.529 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [11]
+2022-10-13 11:13:50.584  WARN 17312 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "styles.css"]
+2022-10-13 11:13:52.624 DEBUG 17312 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?, ?
+2022-10-13 11:13:52.626 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [11]
+2022-10-13 11:13:52.626 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [saiteja@yahoo.com]
+2022-10-13 11:13:52.627 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [venkat]
+2022-10-13 11:13:52.627 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [saiteja]
+2022-10-13 11:13:52.669  WARN 17312 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "styles.css"]
+2022-10-13 11:13:57.194 DEBUG 17312 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?
+2022-10-13 11:13:57.197 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [4]
+2022-10-13 11:13:57.197 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [joeroot@hotmail.com]
+2022-10-13 11:13:57.197 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [joe]
+2022-10-13 11:13:57.198 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [root]
+2022-10-13 11:13:57.198 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [2]
+2022-10-13 11:13:57.198 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [kalyani@gmail.com]
+2022-10-13 11:13:57.199 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [kalyani]
+2022-10-13 11:13:57.199 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:13:57.199 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [10]
+2022-10-13 11:13:57.200 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthi@gmail.com]
+2022-10-13 11:13:57.200 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthi]
+2022-10-13 11:13:57.200 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:13:57.201 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [1]
+2022-10-13 11:13:57.201 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthik@gmail.com]
+2022-10-13 11:13:57.202 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthik]
+2022-10-13 11:13:57.203 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:13:57.204 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [8]
+2022-10-13 11:13:57.205 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [padma@gmail.com]
+2022-10-13 11:13:57.205 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [padma]
+2022-10-13 11:13:57.205 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:13:57.206 DEBUG 17312 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select count(student0_.id) as col_0_0_ from student student0_
+2022-10-13 11:13:57.209 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [11]
+2022-10-13 11:13:57.248  WARN 17312 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "styles.css"]
+2022-10-13 11:14:00.000 DEBUG 17312 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?, ?
+2022-10-13 11:14:00.001 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [3]
+2022-10-13 11:14:00.003 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [paul@yahoo.com]
+2022-10-13 11:14:00.003 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [paul]
+2022-10-13 11:14:00.004 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [jackson]
+2022-10-13 11:14:00.004 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [5]
+2022-10-13 11:14:00.004 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [rohit@gmail.com]
+2022-10-13 11:14:00.005 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [rohit]
+2022-10-13 11:14:00.005 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [sharma]
+2022-10-13 11:14:00.006 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [6]
+2022-10-13 11:14:00.006 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [shirisha@gmail.com]
+2022-10-13 11:14:00.006 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [shirisha]
+2022-10-13 11:14:00.007 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [kurva]
+2022-10-13 11:14:00.008 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [9]
+2022-10-13 11:14:00.008 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [siri@gmail.com]
+2022-10-13 11:14:00.010 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [siri]
+2022-10-13 11:14:00.011 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [kurva]
+2022-10-13 11:14:00.012 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [7]
+2022-10-13 11:14:00.012 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [srinivas@gmail.com]
+2022-10-13 11:14:00.013 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [srinivas]
+2022-10-13 11:14:00.013 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:14:00.014 DEBUG 17312 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select count(student0_.id) as col_0_0_ from student student0_
+2022-10-13 11:14:00.018 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [11]
+2022-10-13 11:14:00.060  WARN 17312 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "styles.css"]
+2022-10-13 11:14:01.897 DEBUG 17312 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?, ?
+2022-10-13 11:14:01.899 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [11]
+2022-10-13 11:14:01.900 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [saiteja@yahoo.com]
+2022-10-13 11:14:01.901 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [venkat]
+2022-10-13 11:14:01.901 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [saiteja]
+2022-10-13 11:14:01.935  WARN 17312 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "styles.css"]
+2022-10-13 11:14:06.517 DEBUG 17312 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?
+2022-10-13 11:14:06.519 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [4]
+2022-10-13 11:14:06.520 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [joeroot@hotmail.com]
+2022-10-13 11:14:06.520 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [joe]
+2022-10-13 11:14:06.521 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [root]
+2022-10-13 11:14:06.521 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [2]
+2022-10-13 11:14:06.521 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [kalyani@gmail.com]
+2022-10-13 11:14:06.522 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [kalyani]
+2022-10-13 11:14:06.522 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:14:06.522 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [10]
+2022-10-13 11:14:06.523 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthi@gmail.com]
+2022-10-13 11:14:06.523 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthi]
+2022-10-13 11:14:06.523 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:14:06.524 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [1]
+2022-10-13 11:14:06.524 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthik@gmail.com]
+2022-10-13 11:14:06.524 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthik]
+2022-10-13 11:14:06.525 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:14:06.526 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [8]
+2022-10-13 11:14:06.526 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [padma@gmail.com]
+2022-10-13 11:14:06.527 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [padma]
+2022-10-13 11:14:06.528 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:14:06.529 DEBUG 17312 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select count(student0_.id) as col_0_0_ from student student0_
+2022-10-13 11:14:06.531 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [11]
+2022-10-13 11:14:06.568  WARN 17312 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "styles.css"]
+2022-10-13 11:14:09.000 DEBUG 17312 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?, ?
+2022-10-13 11:14:09.003 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [3]
+2022-10-13 11:14:09.003 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [paul@yahoo.com]
+2022-10-13 11:14:09.003 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [paul]
+2022-10-13 11:14:09.004 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [jackson]
+2022-10-13 11:14:09.004 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [5]
+2022-10-13 11:14:09.004 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [rohit@gmail.com]
+2022-10-13 11:14:09.005 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [rohit]
+2022-10-13 11:14:09.005 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [sharma]
+2022-10-13 11:14:09.006 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [6]
+2022-10-13 11:14:09.006 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [shirisha@gmail.com]
+2022-10-13 11:14:09.007 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [shirisha]
+2022-10-13 11:14:09.007 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [kurva]
+2022-10-13 11:14:09.007 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [9]
+2022-10-13 11:14:09.008 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [siri@gmail.com]
+2022-10-13 11:14:09.009 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [siri]
+2022-10-13 11:14:09.010 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [kurva]
+2022-10-13 11:14:09.011 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [7]
+2022-10-13 11:14:09.011 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [srinivas@gmail.com]
+2022-10-13 11:14:09.011 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [srinivas]
+2022-10-13 11:14:09.012 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:14:09.012 DEBUG 17312 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select count(student0_.id) as col_0_0_ from student student0_
+2022-10-13 11:14:09.014 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [11]
+2022-10-13 11:14:09.051  WARN 17312 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "styles.css"]
+2022-10-13 11:14:11.380 DEBUG 17312 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?
+2022-10-13 11:14:11.382 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [4]
+2022-10-13 11:14:11.382 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [joeroot@hotmail.com]
+2022-10-13 11:14:11.383 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [joe]
+2022-10-13 11:14:11.383 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [root]
+2022-10-13 11:14:11.384 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [2]
+2022-10-13 11:14:11.385 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [kalyani@gmail.com]
+2022-10-13 11:14:11.385 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [kalyani]
+2022-10-13 11:14:11.385 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:14:11.385 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [10]
+2022-10-13 11:14:11.386 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthi@gmail.com]
+2022-10-13 11:14:11.386 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthi]
+2022-10-13 11:14:11.386 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:14:11.387 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [1]
+2022-10-13 11:14:11.387 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthik@gmail.com]
+2022-10-13 11:14:11.387 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthik]
+2022-10-13 11:14:11.388 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:14:11.388 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [8]
+2022-10-13 11:14:11.388 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [padma@gmail.com]
+2022-10-13 11:14:11.389 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [padma]
+2022-10-13 11:14:11.389 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:14:11.390 DEBUG 17312 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select count(student0_.id) as col_0_0_ from student student0_
+2022-10-13 11:14:11.393 TRACE 17312 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [11]
+2022-10-13 11:14:11.429  WARN 17312 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "styles.css"]
+2022-10-13 11:14:13.018 DEBUG 17312 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?, ?
+2022-10-13 11:14:13.020 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [11]
+2022-10-13 11:14:13.020 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [saiteja@yahoo.com]
+2022-10-13 11:14:13.020 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [venkat]
+2022-10-13 11:14:13.020 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [saiteja]
+2022-10-13 11:14:13.054  WARN 17312 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "styles.css"]
+2022-10-13 11:14:16.410 DEBUG 17312 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?
+2022-10-13 11:14:16.412 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [4]
+2022-10-13 11:14:16.412 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [joeroot@hotmail.com]
+2022-10-13 11:14:16.414 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [joe]
+2022-10-13 11:14:16.414 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [root]
+2022-10-13 11:14:16.415 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [2]
+2022-10-13 11:14:16.415 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [kalyani@gmail.com]
+2022-10-13 11:14:16.415 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [kalyani]
+2022-10-13 11:14:16.416 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:14:16.416 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [10]
+2022-10-13 11:14:16.416 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthi@gmail.com]
+2022-10-13 11:14:16.417 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthi]
+2022-10-13 11:14:16.417 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:14:16.417 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [1]
+2022-10-13 11:14:16.417 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthik@gmail.com]
+2022-10-13 11:14:16.418 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthik]
+2022-10-13 11:14:16.419 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:14:16.420 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [8]
+2022-10-13 11:14:16.420 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [padma@gmail.com]
+2022-10-13 11:14:16.420 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [padma]
+2022-10-13 11:14:16.421 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:14:16.422 DEBUG 17312 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select count(student0_.id) as col_0_0_ from student student0_
+2022-10-13 11:14:16.423 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [11]
+2022-10-13 11:14:16.458  WARN 17312 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "styles.css"]
+2022-10-13 11:37:52.204 DEBUG 17312 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select user0_.user_id as user_id1_2_, user0_.enabled as enabled2_2_, user0_.password as password3_2_, user0_.username as username4_2_ from users user0_ where user0_.username=?
+2022-10-13 11:37:52.206 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [user]
+2022-10-13 11:37:52.207 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_2_] : [BIGINT]) - [3]
+2022-10-13 11:37:52.207 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([enabled2_2_] : [BOOLEAN]) - [true]
+2022-10-13 11:37:52.208 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password3_2_] : [VARCHAR]) - [$2a$10$LXbaneMSJyAAvH8dOOGiHuyTi.yIKJjYLVfEDeQcRg5s0YJqZz5YO]
+2022-10-13 11:37:52.208 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([username4_2_] : [VARCHAR]) - [user]
+2022-10-13 11:37:52.208 TRACE 17312 --- [http-nio-8080-exec-1] org.hibernate.type.CollectionType        : Created collection wrapper: [com.karthik.crud_thymeleaf_springboot.model.User.roles#3]
+2022-10-13 11:37:52.209 DEBUG 17312 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.role_id as role_id1_0_1_, role1_.name as name2_0_1_ from users_roles roles0_ inner join roles role1_ on roles0_.role_id=role1_.role_id where roles0_.user_id=?
+2022-10-13 11:37:52.210 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2022-10-13 11:37:52.211 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([role_id1_0_1_] : [INTEGER]) - [1]
+2022-10-13 11:37:52.212 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_1_] : [VARCHAR]) - [USER]
+2022-10-13 11:37:52.213 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_3_0_] : [BIGINT]) - [3]
+2022-10-13 11:37:52.214 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([role_id2_3_0_] : [INTEGER]) - [1]
+2022-10-13 11:37:52.282 DEBUG 17312 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?
+2022-10-13 11:37:52.283 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [4]
+2022-10-13 11:37:52.283 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [joeroot@hotmail.com]
+2022-10-13 11:37:52.284 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [joe]
+2022-10-13 11:37:52.284 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [root]
+2022-10-13 11:37:52.284 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [2]
+2022-10-13 11:37:52.285 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [kalyani@gmail.com]
+2022-10-13 11:37:52.285 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [kalyani]
+2022-10-13 11:37:52.285 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:37:52.286 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [10]
+2022-10-13 11:37:52.286 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthi@gmail.com]
+2022-10-13 11:37:52.286 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthi]
+2022-10-13 11:37:52.286 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:37:52.286 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [1]
+2022-10-13 11:37:52.287 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthik@gmail.com]
+2022-10-13 11:37:52.287 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthik]
+2022-10-13 11:37:52.287 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:37:52.287 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [8]
+2022-10-13 11:37:52.288 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [padma@gmail.com]
+2022-10-13 11:37:52.288 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [padma]
+2022-10-13 11:37:52.288 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 11:37:52.289 DEBUG 17312 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select count(student0_.id) as col_0_0_ from student student0_
+2022-10-13 11:37:52.292 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [11]
+2022-10-13 12:06:41.084 DEBUG 17312 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select user0_.user_id as user_id1_2_, user0_.enabled as enabled2_2_, user0_.password as password3_2_, user0_.username as username4_2_ from users user0_ where user0_.username=?
+2022-10-13 12:06:41.087 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [administrator]
+2022-10-13 12:06:41.089 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_2_] : [BIGINT]) - [1]
+2022-10-13 12:06:41.090 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([enabled2_2_] : [BOOLEAN]) - [true]
+2022-10-13 12:06:41.092 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password3_2_] : [VARCHAR]) - [$2a$10$zCawx5eX1yRcdpKzKLFnFOdjx2IwX5HjhDVNSqZG79KIrxp3uMJBW]
+2022-10-13 12:06:41.092 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([username4_2_] : [VARCHAR]) - [administrator]
+2022-10-13 12:06:41.093 TRACE 17312 --- [http-nio-8080-exec-3] org.hibernate.type.CollectionType        : Created collection wrapper: [com.karthik.crud_thymeleaf_springboot.model.User.roles#1]
+2022-10-13 12:06:41.095 DEBUG 17312 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.role_id as role_id1_0_1_, role1_.name as name2_0_1_ from users_roles roles0_ inner join roles role1_ on roles0_.role_id=role1_.role_id where roles0_.user_id=?
+2022-10-13 12:06:41.096 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2022-10-13 12:06:41.100 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([role_id1_0_1_] : [INTEGER]) - [3]
+2022-10-13 12:06:41.100 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_1_] : [VARCHAR]) - [ADMIN]
+2022-10-13 12:06:41.101 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_3_0_] : [BIGINT]) - [1]
+2022-10-13 12:06:41.105 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([role_id2_3_0_] : [INTEGER]) - [3]
+2022-10-13 12:06:41.181 DEBUG 17312 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?
+2022-10-13 12:06:41.189 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [4]
+2022-10-13 12:06:41.191 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [joeroot@hotmail.com]
+2022-10-13 12:06:41.192 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [joe]
+2022-10-13 12:06:41.193 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [root]
+2022-10-13 12:06:41.193 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [2]
+2022-10-13 12:06:41.194 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [kalyani@gmail.com]
+2022-10-13 12:06:41.194 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [kalyani]
+2022-10-13 12:06:41.194 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:06:41.195 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [10]
+2022-10-13 12:06:41.196 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthi@gmail.com]
+2022-10-13 12:06:41.196 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthi]
+2022-10-13 12:06:41.197 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:06:41.197 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [1]
+2022-10-13 12:06:41.198 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthik@gmail.com]
+2022-10-13 12:06:41.198 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthik]
+2022-10-13 12:06:41.198 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:06:41.199 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [8]
+2022-10-13 12:06:41.199 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [padma@gmail.com]
+2022-10-13 12:06:41.199 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [padma]
+2022-10-13 12:06:41.200 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:06:41.202 DEBUG 17312 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select count(student0_.id) as col_0_0_ from student student0_
+2022-10-13 12:06:41.208 TRACE 17312 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [11]
+2022-10-13 12:06:49.395 DEBUG 17312 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select student0_.id as id1_1_0_, student0_.email as email2_1_0_, student0_.first_name as first_na3_1_0_, student0_.last_name as last_nam4_1_0_ from student student0_ where student0_.id=?
+2022-10-13 12:06:49.397 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4]
+2022-10-13 12:06:49.401 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_0_] : [VARCHAR]) - [joeroot@hotmail.com]
+2022-10-13 12:06:49.403 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_0_] : [VARCHAR]) - [joe]
+2022-10-13 12:06:49.403 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_0_] : [VARCHAR]) - [root]
+2022-10-13 12:06:51.837 DEBUG 17312 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select student0_.id as id1_1_0_, student0_.email as email2_1_0_, student0_.first_name as first_na3_1_0_, student0_.last_name as last_nam4_1_0_ from student student0_ where student0_.id=?
+2022-10-13 12:06:51.838 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4]
+2022-10-13 12:06:51.839 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_0_] : [VARCHAR]) - [joeroot@hotmail.com]
+2022-10-13 12:06:51.840 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_0_] : [VARCHAR]) - [joe]
+2022-10-13 12:06:51.840 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_0_] : [VARCHAR]) - [root]
+2022-10-13 12:06:51.887 DEBUG 17312 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?
+2022-10-13 12:06:51.891 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [4]
+2022-10-13 12:06:51.892 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [joeroot@hotmail.com]
+2022-10-13 12:06:51.893 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [joe]
+2022-10-13 12:06:51.893 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [root]
+2022-10-13 12:06:51.894 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [2]
+2022-10-13 12:06:51.895 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [kalyani@gmail.com]
+2022-10-13 12:06:51.895 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [kalyani]
+2022-10-13 12:06:51.896 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:06:51.896 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [10]
+2022-10-13 12:06:51.897 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthi@gmail.com]
+2022-10-13 12:06:51.897 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthi]
+2022-10-13 12:06:51.898 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:06:51.898 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [1]
+2022-10-13 12:06:51.898 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthik@gmail.com]
+2022-10-13 12:06:51.898 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthik]
+2022-10-13 12:06:51.899 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:06:51.899 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [8]
+2022-10-13 12:06:51.900 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [padma@gmail.com]
+2022-10-13 12:06:51.900 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [padma]
+2022-10-13 12:06:51.901 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:06:51.906 DEBUG 17312 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select count(student0_.id) as col_0_0_ from student student0_
+2022-10-13 12:06:51.913 TRACE 17312 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [11]
+2022-10-13 12:07:00.120 DEBUG 17312 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select student0_.id as id1_1_0_, student0_.email as email2_1_0_, student0_.first_name as first_na3_1_0_, student0_.last_name as last_nam4_1_0_ from student student0_ where student0_.id=?
+2022-10-13 12:07:00.121 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4]
+2022-10-13 12:07:00.126 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_0_] : [VARCHAR]) - [joeroot@hotmail.com]
+2022-10-13 12:07:00.129 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_0_] : [VARCHAR]) - [joe]
+2022-10-13 12:07:00.131 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_0_] : [VARCHAR]) - [root]
+2022-10-13 12:07:00.204 DEBUG 17312 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : delete from student where id=?
+2022-10-13 12:07:00.207 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [4]
+2022-10-13 12:07:00.275 DEBUG 17312 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?
+2022-10-13 12:07:00.281 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [2]
+2022-10-13 12:07:00.283 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [kalyani@gmail.com]
+2022-10-13 12:07:00.286 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [kalyani]
+2022-10-13 12:07:00.288 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:00.291 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [10]
+2022-10-13 12:07:00.294 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthi@gmail.com]
+2022-10-13 12:07:00.298 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthi]
+2022-10-13 12:07:00.298 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:00.299 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [1]
+2022-10-13 12:07:00.302 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthik@gmail.com]
+2022-10-13 12:07:00.304 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthik]
+2022-10-13 12:07:00.304 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:00.305 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [8]
+2022-10-13 12:07:00.305 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [padma@gmail.com]
+2022-10-13 12:07:00.305 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [padma]
+2022-10-13 12:07:00.306 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:00.306 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [3]
+2022-10-13 12:07:00.306 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [paul@yahoo.com]
+2022-10-13 12:07:00.307 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [paul]
+2022-10-13 12:07:00.314 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [jackson]
+2022-10-13 12:07:00.322 DEBUG 17312 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select count(student0_.id) as col_0_0_ from student student0_
+2022-10-13 12:07:00.329 TRACE 17312 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [10]
+2022-10-13 12:07:05.450 DEBUG 17312 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?, ?
+2022-10-13 12:07:05.456 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [5]
+2022-10-13 12:07:05.458 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [rohit@gmail.com]
+2022-10-13 12:07:05.459 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [rohit]
+2022-10-13 12:07:05.460 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [sharma]
+2022-10-13 12:07:05.461 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [6]
+2022-10-13 12:07:05.461 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [shirisha@gmail.com]
+2022-10-13 12:07:05.462 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [shirisha]
+2022-10-13 12:07:05.463 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [kurva]
+2022-10-13 12:07:05.463 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [9]
+2022-10-13 12:07:05.465 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [siri@gmail.com]
+2022-10-13 12:07:05.466 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [siri]
+2022-10-13 12:07:05.469 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [kurva]
+2022-10-13 12:07:05.470 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [7]
+2022-10-13 12:07:05.470 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [srinivas@gmail.com]
+2022-10-13 12:07:05.472 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [srinivas]
+2022-10-13 12:07:05.473 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:05.474 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [11]
+2022-10-13 12:07:05.475 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [saiteja@yahoo.com]
+2022-10-13 12:07:05.477 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [venkat]
+2022-10-13 12:07:05.480 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [saiteja]
+2022-10-13 12:07:05.483 DEBUG 17312 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select count(student0_.id) as col_0_0_ from student student0_
+2022-10-13 12:07:05.491 TRACE 17312 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [10]
+2022-10-13 12:07:05.551  WARN 17312 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "styles.css"]
+2022-10-13 12:07:07.509 DEBUG 17312 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?
+2022-10-13 12:07:07.516 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [2]
+2022-10-13 12:07:07.518 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [kalyani@gmail.com]
+2022-10-13 12:07:07.519 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [kalyani]
+2022-10-13 12:07:07.520 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:07.520 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [10]
+2022-10-13 12:07:07.521 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthi@gmail.com]
+2022-10-13 12:07:07.522 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthi]
+2022-10-13 12:07:07.522 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:07.523 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [1]
+2022-10-13 12:07:07.525 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthik@gmail.com]
+2022-10-13 12:07:07.528 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthik]
+2022-10-13 12:07:07.531 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:07.532 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [8]
+2022-10-13 12:07:07.532 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [padma@gmail.com]
+2022-10-13 12:07:07.532 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [padma]
+2022-10-13 12:07:07.533 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:07.533 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [3]
+2022-10-13 12:07:07.534 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [paul@yahoo.com]
+2022-10-13 12:07:07.534 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [paul]
+2022-10-13 12:07:07.535 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [jackson]
+2022-10-13 12:07:07.536 DEBUG 17312 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select count(student0_.id) as col_0_0_ from student student0_
+2022-10-13 12:07:07.542 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [10]
+2022-10-13 12:07:07.606  WARN 17312 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "styles.css"]
+2022-10-13 12:07:25.165 DEBUG 17312 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select user0_.user_id as user_id1_2_, user0_.enabled as enabled2_2_, user0_.password as password3_2_, user0_.username as username4_2_ from users user0_ where user0_.username=?
+2022-10-13 12:07:25.167 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [manager]
+2022-10-13 12:07:25.170 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_2_] : [BIGINT]) - [2]
+2022-10-13 12:07:25.170 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([enabled2_2_] : [BOOLEAN]) - [true]
+2022-10-13 12:07:25.171 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password3_2_] : [VARCHAR]) - [$2a$10$zFzKu6sOxp7MjfVFNQ5jU.fbQym4WGQaChrjzkgqBXup9b5NgrfDe]
+2022-10-13 12:07:25.171 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([username4_2_] : [VARCHAR]) - [manager]
+2022-10-13 12:07:25.172 TRACE 17312 --- [http-nio-8080-exec-1] org.hibernate.type.CollectionType        : Created collection wrapper: [com.karthik.crud_thymeleaf_springboot.model.User.roles#2]
+2022-10-13 12:07:25.173 DEBUG 17312 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.role_id as role_id1_0_1_, role1_.name as name2_0_1_ from users_roles roles0_ inner join roles role1_ on roles0_.role_id=role1_.role_id where roles0_.user_id=?
+2022-10-13 12:07:25.174 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [2]
+2022-10-13 12:07:25.177 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([role_id1_0_1_] : [INTEGER]) - [2]
+2022-10-13 12:07:25.178 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_1_] : [VARCHAR]) - [EDITOR]
+2022-10-13 12:07:25.178 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_3_0_] : [BIGINT]) - [2]
+2022-10-13 12:07:25.178 TRACE 17312 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([role_id2_3_0_] : [INTEGER]) - [2]
+2022-10-13 12:07:25.257 DEBUG 17312 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?
+2022-10-13 12:07:25.258 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [2]
+2022-10-13 12:07:25.259 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [kalyani@gmail.com]
+2022-10-13 12:07:25.261 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [kalyani]
+2022-10-13 12:07:25.264 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:25.265 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [10]
+2022-10-13 12:07:25.266 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthi@gmail.com]
+2022-10-13 12:07:25.268 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthi]
+2022-10-13 12:07:25.269 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:25.269 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [1]
+2022-10-13 12:07:25.270 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthik@gmail.com]
+2022-10-13 12:07:25.270 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthik]
+2022-10-13 12:07:25.270 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:25.271 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [8]
+2022-10-13 12:07:25.272 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [padma@gmail.com]
+2022-10-13 12:07:25.273 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [padma]
+2022-10-13 12:07:25.274 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:25.275 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [3]
+2022-10-13 12:07:25.276 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [paul@yahoo.com]
+2022-10-13 12:07:25.276 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [paul]
+2022-10-13 12:07:25.277 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [jackson]
+2022-10-13 12:07:25.278 DEBUG 17312 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select count(student0_.id) as col_0_0_ from student student0_
+2022-10-13 12:07:25.282 TRACE 17312 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [10]
+2022-10-13 12:07:44.169 DEBUG 17312 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select user0_.user_id as user_id1_2_, user0_.enabled as enabled2_2_, user0_.password as password3_2_, user0_.username as username4_2_ from users user0_ where user0_.username=?
+2022-10-13 12:07:44.171 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [user]
+2022-10-13 12:07:44.174 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_2_] : [BIGINT]) - [3]
+2022-10-13 12:07:44.174 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([enabled2_2_] : [BOOLEAN]) - [true]
+2022-10-13 12:07:44.175 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([password3_2_] : [VARCHAR]) - [$2a$10$LXbaneMSJyAAvH8dOOGiHuyTi.yIKJjYLVfEDeQcRg5s0YJqZz5YO]
+2022-10-13 12:07:44.175 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([username4_2_] : [VARCHAR]) - [user]
+2022-10-13 12:07:44.176 TRACE 17312 --- [http-nio-8080-exec-7] org.hibernate.type.CollectionType        : Created collection wrapper: [com.karthik.crud_thymeleaf_springboot.model.User.roles#3]
+2022-10-13 12:07:44.176 DEBUG 17312 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.role_id as role_id1_0_1_, role1_.name as name2_0_1_ from users_roles roles0_ inner join roles role1_ on roles0_.role_id=role1_.role_id where roles0_.user_id=?
+2022-10-13 12:07:44.178 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2022-10-13 12:07:44.180 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([role_id1_0_1_] : [INTEGER]) - [1]
+2022-10-13 12:07:44.180 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([name2_0_1_] : [VARCHAR]) - [USER]
+2022-10-13 12:07:44.181 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([user_id1_3_0_] : [BIGINT]) - [3]
+2022-10-13 12:07:44.181 TRACE 17312 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([role_id2_3_0_] : [INTEGER]) - [1]
+2022-10-13 12:07:44.262 DEBUG 17312 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select student0_.id as id1_1_, student0_.email as email2_1_, student0_.first_name as first_na3_1_, student0_.last_name as last_nam4_1_ from student student0_ order by student0_.first_name asc limit ?
+2022-10-13 12:07:44.264 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [2]
+2022-10-13 12:07:44.264 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [kalyani@gmail.com]
+2022-10-13 12:07:44.265 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [kalyani]
+2022-10-13 12:07:44.265 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:44.265 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [10]
+2022-10-13 12:07:44.266 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthi@gmail.com]
+2022-10-13 12:07:44.266 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthi]
+2022-10-13 12:07:44.266 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:44.267 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [1]
+2022-10-13 12:07:44.267 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [karthik@gmail.com]
+2022-10-13 12:07:44.268 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [karthik]
+2022-10-13 12:07:44.268 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:44.269 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [8]
+2022-10-13 12:07:44.269 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [padma@gmail.com]
+2022-10-13 12:07:44.269 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [padma]
+2022-10-13 12:07:44.269 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [karnati]
+2022-10-13 12:07:44.270 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([id1_1_] : [BIGINT]) - [3]
+2022-10-13 12:07:44.270 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([email2_1_] : [VARCHAR]) - [paul@yahoo.com]
+2022-10-13 12:07:44.270 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([first_na3_1_] : [VARCHAR]) - [paul]
+2022-10-13 12:07:44.272 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([last_nam4_1_] : [VARCHAR]) - [jackson]
+2022-10-13 12:07:44.277 DEBUG 17312 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select count(student0_.id) as col_0_0_ from student student0_
+2022-10-13 12:07:44.288 TRACE 17312 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicExtractor   : extracted value ([col_0_0_] : [BIGINT]) - [10]
